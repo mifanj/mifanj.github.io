@@ -98,7 +98,7 @@ Ubuntu run this
 
 1sudo apt-get install fcgiwrap
 spawn-fcgiHomePage12345wget http://download.lighttpd.net/spawn-fcgi/releases-1.6.x/spawn-fcgi-1.6.4.tar.gztar -zxvf spawn-fcgi-1.6.4.tar.gz./con">
-<meta property="og:updated_time" content="2016-05-12T06:00:10.000Z">
+<meta property="og:updated_time" content="2016-05-12T06:04:06.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="FastCGI">
 <meta name="twitter:description" content="INSTALL
@@ -315,25 +315,25 @@ spawn-fcgiHomePage12345wget http://download.lighttpd.net/spawn-fcgi/releases-1.6
         <h1 id="INSTALL"><a href="#INSTALL" class="headerlink" title="INSTALL"></a>INSTALL</h1><blockquote>
 <p>Ubuntu run this</p>
 </blockquote>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install fcgiwrap</span><br></pre></td></tr></table></figure>
-<h2 id="spawn-fcgi"><a href="#spawn-fcgi" class="headerlink" title="spawn-fcgi"></a>spawn-fcgi</h2><p><a href="http://redmine.lighttpd.net/projects/spawn-fcgi/wiki" target="_blank" rel="external">HomePage</a><br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">wget http://download.lighttpd.net/spawn-fcgi/releases-1.6.x/spawn-fcgi-1.6.4.tar.gz</span><br><span class="line">tar -zxvf spawn-fcgi-1.6.4.tar.gz</span><br><span class="line">./configure</span><br><span class="line">make</span><br><span class="line">make install</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install fcgiwrap</span><br></pre></td></tr></table></figure>
+<h2 id="spawn-fcgi"><a href="#spawn-fcgi" class="headerlink" title="spawn-fcgi"></a>spawn-fcgi</h2><p><a href="http://redmine.lighttpd.net/projects/spawn-fcgi/wiki" target="_blank" rel="external">HomePage</a><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">wget http://download.lighttpd.net/spawn-fcgi/releases-1.6.x/spawn-fcgi-1.6.4.tar.gz</span><br><span class="line">tar -zxvf spawn-fcgi-1.6.4.tar.gz</span><br><span class="line">./configure</span><br><span class="line">make</span><br><span class="line">make install</span><br></pre></td></tr></table></figure></p>
 <blockquote>
 <p>./autogen.sh: x: autoreconf: not found</p>
 </blockquote>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install autoconf automake libtool</span><br></pre></td></tr></table></figure>
 <h2 id="fcgi"><a href="#fcgi" class="headerlink" title="fcgi"></a>fcgi</h2><p><a href="http://www.fastcgi.com" target="_blank" rel="external">HomePage</a></p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">tar -zxvf fcgi-2.4.0.tar.gz</span><br><span class="line">./configure</span><br><span class="line">make</span><br><span class="line">make install</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">tar -zxvf fcgi-2.4.0.tar.gz</span><br><span class="line">./configure</span><br><span class="line">make</span><br><span class="line">make install</span><br></pre></td></tr></table></figure>
 <blockquote>
 <p>error: ‘EOF’ was not declared in this scope</p>
 </blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi include/fcgio.h</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi include/fcgio.h</span><br></pre></td></tr></table></figure>
 <p>insert #include <cstdio></cstdio></p>
 <blockquote>
 <p>error while loading shared libraries: libfcgi.so.0: cannot open shared object file: No such file or directory</p>
 </blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi /etc/ld.so.conf.d/ldconfig</span><br></pre></td></tr></table></figure>
-<p>insert path “/usr/local/lib”<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ldconfig</span><br></pre></td></tr></table></figure></p>
-<h2 id="fcgiwrap"><a href="#fcgiwrap" class="headerlink" title="fcgiwrap"></a>fcgiwrap</h2><p><a href="https://github.com/gnosek/fcgiwrap" target="_blank" rel="external">GithubHomePage</a><br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/gnosek/fcgiwrap.git</span><br><span class="line">autoreconf -i</span><br><span class="line">./configure</span><br><span class="line">make</span><br><span class="line">make install</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi /etc/ld.so.conf.d/ldconfig</span><br></pre></td></tr></table></figure>
+<p>insert path “/usr/local/lib” then<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ldconfig</span><br></pre></td></tr></table></figure></p>
+<h2 id="fcgiwrap"><a href="#fcgiwrap" class="headerlink" title="fcgiwrap"></a>fcgiwrap</h2><p><a href="https://github.com/gnosek/fcgiwrap" target="_blank" rel="external">GithubHomePage</a><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/gnosek/fcgiwrap.git</span><br><span class="line">autoreconf -i</span><br><span class="line">./configure</span><br><span class="line">make</span><br><span class="line">make install</span><br></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -443,7 +443,7 @@ spawn-fcgiHomePage12345wget http://download.lighttpd.net/spawn-fcgi/releases-1.6
                src="/avatar.jpg"
                alt="mifanJ" />
           <p class="site-author-name" itemprop="name">mifanJ</p>
-          <p class="site-description motion-element" itemprop="description">swift菜鸡一枚</p>
+          <p class="site-description motion-element" itemprop="description">swift菜鸟一枚</p>
         </div>
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
