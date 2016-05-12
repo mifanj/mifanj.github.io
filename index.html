@@ -243,6 +243,130 @@
             
               
                 
+                <a class="post-title-link" href="/2016/05/12/get-param/" itemprop="url">
+                  Kitura Get Param with Method GET
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-05-12T14:27:49+08:00" content="2016-05-12">
+              2016-05-12
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/Server/" itemprop="url" rel="index">
+                    <span itemprop="name">Server</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir HelloUser &amp;&amp; <span class="built_in">cd</span> HelloUser &amp;&amp; swift build --init</span><br></pre></td></tr></table></figure>
+<p>Edit Package.swift insert code after “name: “xxx””</p>
+<blockquote>
+<p>swift Development 3.0 2016-4-25<br><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"> ,</span><br><span class="line">dependencies: [</span><br><span class="line">    .<span class="type">Package</span>(url: <span class="string">"https://github.com/IBM-Swift/Kitura.git"</span>, majorVersion: <span class="number">0</span>, minor: <span class="number">11</span>)</span><br><span class="line">   ]</span><br></pre></td></tr></table></figure></p>
+<p>swift Development 3.0 2016-5-3<br><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">,</span><br><span class="line">dependencies: [</span><br><span class="line">   .<span class="type">Package</span>(url: <span class="string">"https://github.com/IBM-Swift/Kitura.git"</span>, majorVersion: <span class="number">0</span>, minor: <span class="number">13</span>)</span><br><span class="line">   ]</span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<p>Edit Source/main.swift file</p>
+<blockquote>
+<p>swift Development 3.0 2016-4-25<br><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> Kitura</span><br><span class="line"><span class="keyword">import</span> KituraNet</span><br><span class="line"><span class="keyword">import</span> KituraSys</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> router = <span class="type">Router</span>()</span><br><span class="line"></span><br><span class="line">router.<span class="keyword">get</span>(<span class="string">"/user/:params"</span>) &#123; request, response, next <span class="keyword">in</span></span><br><span class="line">        response.setHeader(<span class="string">"Content-Type"</span>, value: <span class="string">"text/html; charset=utf-8"</span>)</span><br><span class="line">        <span class="keyword">let</span> paramString = request.params[<span class="string">"params"</span>] ?? <span class="string">"(nil)"</span></span><br><span class="line">        <span class="keyword">do</span> &#123;</span><br><span class="line">                <span class="keyword">try</span> response.status(<span class="type">HttpStatusCode</span>.<span class="type">OK</span>).send(</span><br><span class="line">                        <span class="string">"&lt;h1&gt;Hello , <span class="subst">\(paramString)</span>&lt;/h1&gt;"</span>).end()</span><br><span class="line">        &#125; <span class="keyword">catch</span> &#123;</span><br><span class="line">                <span class="built_in">print</span>(<span class="string">"Error"</span>)</span><br><span class="line">        &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> server = <span class="type">HttpServer</span>.listen(port: <span class="number">8090</span>, delegate: router)</span><br><span class="line"><span class="type">Server</span>.run()</span><br></pre></td></tr></table></figure></p>
+<p>swift Development 3.0 2016-5-3<br><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> Kitura</span><br><span class="line"><span class="keyword">import</span> KituraNet</span><br><span class="line"><span class="keyword">import</span> KituraSys</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> router = <span class="type">Router</span>()</span><br><span class="line"></span><br><span class="line">router.<span class="keyword">get</span>(<span class="string">"/user/:params"</span>) &#123; request, response, next <span class="keyword">in</span></span><br><span class="line">        response.setHeader(<span class="string">"Content-Type"</span>, value: <span class="string">"text/html; charset=utf-8"</span>)</span><br><span class="line">        <span class="keyword">let</span> paramString = request.params[<span class="string">"params"</span>] ?? <span class="string">"(nil)"</span></span><br><span class="line">        <span class="keyword">do</span> &#123;</span><br><span class="line">                <span class="keyword">try</span> response.status(<span class="type">HTTPStatusCode</span>.<span class="type">OK</span>).send(</span><br><span class="line">                        <span class="string">"&lt;h1&gt;Hello , <span class="subst">\(paramString)</span>&lt;/h1&gt;"</span>).end()</span><br><span class="line">        &#125; <span class="keyword">catch</span> &#123;</span><br><span class="line">                <span class="built_in">print</span>(<span class="string">"Error"</span>)</span><br><span class="line">        &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> server = <span class="type">HTTPServer</span>.listen(port: <span class="number">8090</span>, delegate: router)</span><br><span class="line"><span class="type">Server</span>.run()</span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">swift build -Xcc -fblocks -Xlinker -rpath -Xlinker .build/debug</span><br></pre></td></tr></table></figure>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/05/12/kitura/" itemprop="url">
                   Kitura Install
                 </a>
@@ -650,7 +774,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">3</span>
+              <span class="site-state-item-count">4</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
