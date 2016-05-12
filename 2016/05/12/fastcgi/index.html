@@ -98,7 +98,7 @@ Ubuntu run this
 
 1sudo apt-get install fcgiwrap
 spawn-fcgiHomePage12345wget http://download.lighttpd.net/spawn-fcgi/releases-1.6.x/spawn-fcgi-1.6.4.tar.gztar -zxvf spawn-fcgi-1.6.4.tar.gz./con">
-<meta property="og:updated_time" content="2016-05-12T06:08:16.000Z">
+<meta property="og:updated_time" content="2016-05-12T06:11:08.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="FastCGI">
 <meta name="twitter:description" content="INSTALL
@@ -327,7 +327,7 @@ spawn-fcgiHomePage12345wget http://download.lighttpd.net/spawn-fcgi/releases-1.6
 <p>error: ‘EOF’ was not declared in this scope</p>
 </blockquote>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi include/fcgio.h</span><br></pre></td></tr></table></figure>
-<p>insert “#include <cstdio>“</cstdio></p>
+<p>insert code<br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br></pre></td></tr></table></figure></p>
 <blockquote>
 <p>error while loading shared libraries: libfcgi.so.0: cannot open shared object file: No such file or directory</p>
 </blockquote>
