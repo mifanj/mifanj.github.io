@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>mifanJ - Blog</title>
   
-  <link href="/atom.xml" rel="self"/>
+  <link href="//atom.xml" rel="self"/>
   
   <link href="http://mifanj.github.io/"/>
   <updated>2016-05-13T02:08:52.000Z</updated>
@@ -45,13 +45,13 @@
       <category term="Server" scheme="http://mifanj.github.io/categories/Server/"/>
     
     
-      <category term="Kitura" scheme="http://mifanj.github.io/tags/Kitura/"/>
-    
-      <category term="Swift" scheme="http://mifanj.github.io/tags/Swift/"/>
-    
       <category term="Ubuntu" scheme="http://mifanj.github.io/tags/Ubuntu/"/>
     
       <category term="Linux" scheme="http://mifanj.github.io/tags/Linux/"/>
+    
+      <category term="Kitura" scheme="http://mifanj.github.io/tags/Kitura/"/>
+    
+      <category term="Swift" scheme="http://mifanj.github.io/tags/Swift/"/>
     
   </entry>
   
@@ -85,13 +85,13 @@
       <category term="Server" scheme="http://mifanj.github.io/categories/Server/"/>
     
     
-      <category term="Kitura" scheme="http://mifanj.github.io/tags/Kitura/"/>
-    
-      <category term="Swift" scheme="http://mifanj.github.io/tags/Swift/"/>
-    
       <category term="Ubuntu" scheme="http://mifanj.github.io/tags/Ubuntu/"/>
     
       <category term="Linux" scheme="http://mifanj.github.io/tags/Linux/"/>
+    
+      <category term="Kitura" scheme="http://mifanj.github.io/tags/Kitura/"/>
+    
+      <category term="Swift" scheme="http://mifanj.github.io/tags/Swift/"/>
     
   </entry>
   
@@ -133,13 +133,13 @@
       <category term="Server" scheme="http://mifanj.github.io/categories/Server/"/>
     
     
-      <category term="Kitura" scheme="http://mifanj.github.io/tags/Kitura/"/>
-    
-      <category term="Swift" scheme="http://mifanj.github.io/tags/Swift/"/>
-    
       <category term="Ubuntu" scheme="http://mifanj.github.io/tags/Ubuntu/"/>
     
       <category term="Linux" scheme="http://mifanj.github.io/tags/Linux/"/>
+    
+      <category term="Kitura" scheme="http://mifanj.github.io/tags/Kitura/"/>
+    
+      <category term="Swift" scheme="http://mifanj.github.io/tags/Swift/"/>
     
   </entry>
   
@@ -186,13 +186,13 @@
       <category term="Server" scheme="http://mifanj.github.io/categories/Server/"/>
     
     
-      <category term="Ubuntu" scheme="http://mifanj.github.io/tags/Ubuntu/"/>
-    
-      <category term="Linux" scheme="http://mifanj.github.io/tags/Linux/"/>
-    
       <category term="FastCGI" scheme="http://mifanj.github.io/tags/FastCGI/"/>
     
       <category term="CGI" scheme="http://mifanj.github.io/tags/CGI/"/>
+    
+      <category term="Ubuntu" scheme="http://mifanj.github.io/tags/Ubuntu/"/>
+    
+      <category term="Linux" scheme="http://mifanj.github.io/tags/Linux/"/>
     
   </entry>
   
