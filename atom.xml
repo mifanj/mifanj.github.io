@@ -186,13 +186,13 @@
       <category term="Server" scheme="http://mifanj.github.io/categories/Server/"/>
     
     
-      <category term="FastCGI" scheme="http://mifanj.github.io/tags/FastCGI/"/>
-    
-      <category term="CGI" scheme="http://mifanj.github.io/tags/CGI/"/>
-    
       <category term="Ubuntu" scheme="http://mifanj.github.io/tags/Ubuntu/"/>
     
       <category term="Linux" scheme="http://mifanj.github.io/tags/Linux/"/>
+    
+      <category term="FastCGI" scheme="http://mifanj.github.io/tags/FastCGI/"/>
+    
+      <category term="CGI" scheme="http://mifanj.github.io/tags/CGI/"/>
     
   </entry>
   
@@ -226,11 +226,11 @@
       <category term="Server" scheme="http://mifanj.github.io/categories/Server/"/>
     
     
+      <category term="Nginx" scheme="http://mifanj.github.io/tags/Nginx/"/>
+    
       <category term="Ubuntu" scheme="http://mifanj.github.io/tags/Ubuntu/"/>
     
       <category term="Linux" scheme="http://mifanj.github.io/tags/Linux/"/>
-    
-      <category term="Nginx" scheme="http://mifanj.github.io/tags/Nginx/"/>
     
   </entry>
   
