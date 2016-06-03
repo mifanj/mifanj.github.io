@@ -4,6 +4,18 @@
   
     
     <entry>
+      <title><![CDATA[Syntax and indent files for Swift by Vim]]></title>
+      <url>http://mifanj.github.io/2016/06/03/vim-swift/</url>
+      <content type="html"><![CDATA[<h1 id="INSTALL"><a href="#INSTALL" class="headerlink" title="INSTALL"></a>INSTALL</h1><h2 id="vim-plug"><a href="#vim-plug" class="headerlink" title="vim-plug"></a>vim-plug</h2><p><a href="https://github.com/junegunn/vim-plug" target="_blank" rel="external">GithubHomePage</a></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">curl <span class="_">-f</span>Lo ~/.vim/<span class="built_in">autoload</span>/plug.vim --create-dirs \</span><br><span class="line">    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim</span><br></pre></td></tr></table></figure>
+<h2 id="swift-vim"><a href="#swift-vim" class="headerlink" title="swift.vim"></a>swift.vim</h2><p><a href="https://github.com/keith/swift.vim" target="_blank" rel="external">GithubHomePage</a></p>
+<p>Create &amp; Edit ~/.vimrc file</p>
+<figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">call</span> plug#begin()</span><br><span class="line"></span><br><span class="line">Plug <span class="string">'keith/swift.vim'</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">call</span> plug#end()</span><br></pre></td></tr></table></figure>
+<p>Reload .vimrc and :PlugInstall to install plugins.</p>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[Kitura Get Param with Method POST]]></title>
       <url>http://mifanj.github.io/2016/05/13/post-param/</url>
       <content type="html"><![CDATA[<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir PostParam &amp;&amp; <span class="built_in">cd</span> PostParam &amp;&amp; swift build --init</span><br></pre></td></tr></table></figure>

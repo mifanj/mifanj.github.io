@@ -5,7 +5,7 @@
   <link href="//atom.xml" rel="self"/>
   
   <link href="http://mifanj.github.io/"/>
-  <updated>2016-05-13T02:08:52.000Z</updated>
+  <updated>2016-06-03T01:32:07.000Z</updated>
   <id>http://mifanj.github.io/</id>
   
   <author>
@@ -14,6 +14,38 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Syntax and indent files for Swift by Vim</title>
+    <link href="http://mifanj.github.io/2016/06/03/vim-swift/"/>
+    <id>http://mifanj.github.io/2016/06/03/vim-swift/</id>
+    <published>2016-06-03T01:18:42.000Z</published>
+    <updated>2016-06-03T01:32:07.000Z</updated>
+    
+    <content type="html">&lt;h1 id=&quot;INSTALL&quot;&gt;&lt;a href=&quot;#INSTALL&quot; class=&quot;headerlink&quot; title=&quot;INSTALL&quot;&gt;&lt;/a&gt;INSTALL&lt;/h1&gt;&lt;h2 id=&quot;vim-plug&quot;&gt;&lt;a href=&quot;#vim-plug&quot; class=&quot;headerlink&quot; title=&quot;vim-plug&quot;&gt;&lt;/a&gt;vim-plug&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/junegunn/vim-plug&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GithubHomePage&lt;/a&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;curl &lt;span class=&quot;_&quot;&gt;-f&lt;/span&gt;Lo ~/.vim/&lt;span class=&quot;built_in&quot;&gt;autoload&lt;/span&gt;/plug.vim --create-dirs \&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;swift-vim&quot;&gt;&lt;a href=&quot;#swift-vim&quot; class=&quot;headerlink&quot; title=&quot;swift.vim&quot;&gt;&lt;/a&gt;swift.vim&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/keith/swift.vim&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GithubHomePage&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Create &amp;amp; Edit ~/.vimrc file&lt;/p&gt;
+&lt;figure class=&quot;highlight vim&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;call&lt;/span&gt; plug#begin()&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Plug &lt;span class=&quot;string&quot;&gt;&#39;keith/swift.vim&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;call&lt;/span&gt; plug#end()&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;Reload .vimrc and :PlugInstall to install plugins.&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;INSTALL&quot;&gt;&lt;a href=&quot;#INSTALL&quot; class=&quot;headerlink&quot; title=&quot;INSTALL&quot;&gt;&lt;/a&gt;INSTALL&lt;/h1&gt;&lt;h2 id=&quot;vim-plug&quot;&gt;&lt;a href=&quot;#vim-plug&quot; class=&quot;headerli
+    
+    </summary>
+    
+      <category term="Server" scheme="http://mifanj.github.io/categories/Server/"/>
+    
+    
+      <category term="Swift" scheme="http://mifanj.github.io/tags/Swift/"/>
+    
+      <category term="Ubuntu" scheme="http://mifanj.github.io/tags/Ubuntu/"/>
+    
+      <category term="Linux" scheme="http://mifanj.github.io/tags/Linux/"/>
+    
+  </entry>
   
   <entry>
     <title>Kitura Get Param with Method POST</title>
@@ -45,13 +77,13 @@
       <category term="Server" scheme="http://mifanj.github.io/categories/Server/"/>
     
     
-      <category term="Ubuntu" scheme="http://mifanj.github.io/tags/Ubuntu/"/>
-    
-      <category term="Linux" scheme="http://mifanj.github.io/tags/Linux/"/>
-    
       <category term="Kitura" scheme="http://mifanj.github.io/tags/Kitura/"/>
     
       <category term="Swift" scheme="http://mifanj.github.io/tags/Swift/"/>
+    
+      <category term="Ubuntu" scheme="http://mifanj.github.io/tags/Ubuntu/"/>
+    
+      <category term="Linux" scheme="http://mifanj.github.io/tags/Linux/"/>
     
   </entry>
   
@@ -85,13 +117,13 @@
       <category term="Server" scheme="http://mifanj.github.io/categories/Server/"/>
     
     
-      <category term="Ubuntu" scheme="http://mifanj.github.io/tags/Ubuntu/"/>
-    
-      <category term="Linux" scheme="http://mifanj.github.io/tags/Linux/"/>
-    
       <category term="Kitura" scheme="http://mifanj.github.io/tags/Kitura/"/>
     
       <category term="Swift" scheme="http://mifanj.github.io/tags/Swift/"/>
+    
+      <category term="Ubuntu" scheme="http://mifanj.github.io/tags/Ubuntu/"/>
+    
+      <category term="Linux" scheme="http://mifanj.github.io/tags/Linux/"/>
     
   </entry>
   
@@ -133,13 +165,13 @@
       <category term="Server" scheme="http://mifanj.github.io/categories/Server/"/>
     
     
-      <category term="Ubuntu" scheme="http://mifanj.github.io/tags/Ubuntu/"/>
-    
-      <category term="Linux" scheme="http://mifanj.github.io/tags/Linux/"/>
-    
       <category term="Kitura" scheme="http://mifanj.github.io/tags/Kitura/"/>
     
       <category term="Swift" scheme="http://mifanj.github.io/tags/Swift/"/>
+    
+      <category term="Ubuntu" scheme="http://mifanj.github.io/tags/Ubuntu/"/>
+    
+      <category term="Linux" scheme="http://mifanj.github.io/tags/Linux/"/>
     
   </entry>
   
@@ -226,11 +258,11 @@
       <category term="Server" scheme="http://mifanj.github.io/categories/Server/"/>
     
     
-      <category term="Nginx" scheme="http://mifanj.github.io/tags/Nginx/"/>
-    
       <category term="Ubuntu" scheme="http://mifanj.github.io/tags/Ubuntu/"/>
     
       <category term="Linux" scheme="http://mifanj.github.io/tags/Linux/"/>
+    
+      <category term="Nginx" scheme="http://mifanj.github.io/tags/Nginx/"/>
     
   </entry>
   
